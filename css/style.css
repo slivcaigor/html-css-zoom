@@ -9,7 +9,6 @@ img {
   max-width: 100%;
 }
 
-
 /* Controllers Styling */
 #zoom-controller--bottom {
   height: 100px;
@@ -17,6 +16,7 @@ img {
   position: fixed;
   width: 100%;
   bottom: 0;
+  z-index: 777;
 }
 
 #zoom-controller--top {
@@ -25,26 +25,34 @@ img {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 777;
 }
-
 
 /* Main Content Styling */
 .video {
-  height: 100%;
+  height: calc(100vh - 100px);
   overflow-y: auto;
   background-color: black;
-  padding: 80px;
+  padding: 70px 80px 0 80px;
 }
 
-#main-content {
-  height: calc(100vh - 100px);
-  background-color: black;
-}
-
-.item {
+.row {
   display: flex;
 }
 
-.item-img {
+.row-img {
+  width: calc(100% / 7 - 6px);
+  position: relative;
+  margin: 6px 3px;
+}
+
+/* No-Mic Label */
+.mic-label {
+  position: absolute;
+  color: white;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 10px;
   padding: 5px;
 }
