@@ -11,7 +11,6 @@ img {
 
 /* Controllers Styling */
 #zoom-controller--bottom {
-  height: 100px;
   background-color: rgb(34, 34, 34);
   position: fixed;
   width: 100%;
@@ -31,7 +30,7 @@ img {
 
 /* Main Content Styling */
 .video {
-  height: calc(100vh - 100px);
+  height: 100vh;
   overflow-y: auto;
   background-color: black;
   padding: 70px 80px 0 80px;
@@ -39,12 +38,12 @@ img {
 
 .row {
   display: flex;
+  gap: 10px;
 }
 
 .row-img {
   width: calc(100% / 7 - 6px);
   position: relative;
-  margin: 6px 3px;
 }
 
 /* No-Mic Label */
@@ -71,13 +70,13 @@ img {
   padding: 5px;
   font-size: 15px;
   border-radius: 5px;
-  margin-left: 5px;
 }
 
 .top-menu--view {
   padding: 10px;
   display: flex;
   justify-content: flex-end;
+  gap: 10px;
 }
 
 button {
@@ -88,10 +87,6 @@ button {
 }
 
 /* Bottom Menu Controller */
-
-.flex {
-  color: white;
-}
 
 .left-menu .fa-microphone {
   font-size: 30px;
@@ -106,7 +101,66 @@ button {
   padding: 20px;
 }
 
-.icon {
-  flex-direction: column;
+/* Bottom Menu Container */
+.bottom-menu-container {
   display: flex;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Bottom Left Menu */
+.icon {
+  font-size: 30px;
+}
+
+.arrow {
+  font-size: 15px;
+}
+
+.btm-left-menu {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 20%;
+  padding: 10px;
+}
+
+.text {
+  color: white;
+  font-size: 13px;
+  padding-top: 5px;
+}
+
+/* Bottom Mid Menu */
+
+.btm-mid-menu {
+  display: flex;
+  gap: 20px;
+  width: 60%;
+  justify-content: center;
+  padding: 10px;
+}
+
+.fa-share-from-square {
+  color: green;
+}
+
+/* Bottom Right Menu */
+.btm-right-menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
+}
+
+.close {
+  color: red;
+  background-color: #555;
+  font-size: 13px;
+  padding: 30px;
 }
