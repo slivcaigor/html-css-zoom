@@ -58,6 +58,8 @@ img {
   padding: 5px;
 }
 
+
+/* Top Menu Controller */
 .view {
   background-color: gray;
   position: absolute;
@@ -81,3 +83,12 @@ img {
 .top-menu--view {
   position: relative;
 }
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* Bottom Menu Controller */
