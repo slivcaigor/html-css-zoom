@@ -54,7 +54,6 @@ img {
   left: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.3);
-  margin: 10px;
   padding: 5px;
 }
 
@@ -62,9 +61,6 @@ img {
 /* Top Menu Controller */
 .view {
   background-color: gray;
-  position: absolute;
-  top: 5px;
-  right: 35px;
   padding: 5px;
   font-size: 15px;
   border-radius: 5px;
@@ -72,16 +68,16 @@ img {
 
 .view--big {
   background-color: gray;
-  position: absolute;
-  top: 5px;
-  right: 5px;
   padding: 5px;
   font-size: 15px;
   border-radius: 5px;
+  margin-left: 5px;
 }
 
 .top-menu--view {
-  position: relative;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 button {
@@ -92,3 +88,25 @@ button {
 }
 
 /* Bottom Menu Controller */
+
+.flex {
+  color: white;
+}
+
+.left-menu .fa-microphone {
+  font-size: 30px;
+}
+
+.left-menu span {
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+.left-menu {
+  padding: 20px;
+}
+
+.icon {
+  flex-direction: column;
+  display: flex;
+}
