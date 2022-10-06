@@ -1,5 +1,50 @@
+/* General Styling */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* Controllers Styling */
+#zoom-controller--bottom {
+  height: 100px;
+  background-color: rgb(34, 34, 34);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+#zoom-controller--top {
+  height: 70px;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+
+/* Main Content Styling */
+.video {
+  height: 100%;
+  overflow-y: auto;
+  background-color: black;
+  padding: 80px;
+}
+
+#main-content {
+  height: calc(100vh - 100px);
+  background-color: black;
+}
+
+.item {
+  display: flex;
+}
+
+.item-img {
+  padding: 5px;
 }
