@@ -106,13 +106,6 @@ button {
   display: flex;
 }
 
-.menu-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
 
 /* Bottom Left Menu */
 .icon {
@@ -125,7 +118,6 @@ button {
 
 .btm-left-menu {
   display: flex;
-  justify-content: flex-start;
   gap: 20px;
   width: 20%;
   padding: 10px;
@@ -153,8 +145,7 @@ button {
 
 /* Bottom Right Menu */
 .btm-right-menu {
-  display: flex;
-  justify-content: flex-end;
+  text-align: end;
   width: 20%;
 }
 
