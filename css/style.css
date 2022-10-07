@@ -42,7 +42,6 @@ img {
 }
 
 .row-img {
-  width: calc(100% / 7 - 6px);
   position: relative;
 }
 
